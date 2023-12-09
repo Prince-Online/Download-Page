@@ -1,285 +1,249 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://kit.fontawesome.com/8aa17a250d.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@350&display=swap" rel="stylesheet">
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
-    h2{
-        font-family: 'Josefin Sans', sans-serif;
-    }
-    .head {
-    margin-top: 10px;
-    margin-left: 10px;
-}
-    .nav {
-    display: flex;
-    margin-top: -20px;
-    margin-left: 130px;
-}
-    .btnb {
-    background: #ccc;
-    border: none;
-    padding: 6px;
-    cursor: pointer;
-    border-radius: 8px;
-}
-    .a{
-    font-family: 'Josefin Sans', sans-serif;
-    text-decoration: none;
-    color: #000;
-}
-.a:hover{
-    color: red;
-}
-.btn{
-    background: transparent;
-    padding: 6px;
-    border: 1px solid;
-    border-image: linear-gradient(45deg, purple, orange) 1;
-    font-family: 'Josefin Sans', sans-serif;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: -9px;
-    margin-left: 1145px;
-}
-.btn1{
-    background: transparent;
-    padding: 6px;
-    margin-top: -1px;
-    font-family: 'Josefin Sans', sans-serif;
-    border: 1px solid;
-    border-image: linear-gradient(45deg, darkblue, lightblue) 1;
-    margin-top: 25px;
-    width: 119px;
-    text-decoration: none;
-    margin-left: 1145px;
-    margin-top: 5px;
-    cursor: pointer;
-}
-.h2{
-    text-align: center;
-}
-.h3{
-    text-align: center;
-    margin-left: -325px;
-}
-.a1{
-    text-decoration: none;
-}
-.btn:hover{
-    color: #fff;
-    background: linear-gradient(45deg, purple, orange);
-}
-.btn1:hover{
-    color: #fff;
-    background: linear-gradient(45deg, darkblue, lightblue);
-}
-.h2,.h3{
-    font-size: 40px;
-}
-.h3{
-    margin-left: -165px;
-}
-.icon{
-    width: 60px;
-    border-radius: 125px;
-}
-.header{
-    text-align: center;
-    margin-top: 55px;
-}
-#changingBox {
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out;
-      margin-left: 840px;
-      margin-top: -40px;
-      width: 310px;
-      padding: 2px;
-      border-radius: 325px;
-      color: #fff;
-    }
-    .text{
-        margin-left: -100px;
-    }
-    .download{
-        text-align: center;
-        margin-top: 50px;
-    }
-    .dnd{
-        background: #3498db;
-        padding: 8px;
-        color: #000;
-        cursor: pointer;
-        font-family: 'Josefin Sans', sans-serif;
-        border: 1px solid;
-        font-size: 25px;
-        background: transparent;
-        border-image: linear-gradient(45deg, darkred, orange) 1;
-    }
-    .dnd:hover{
-    color: #fff;
-    background: linear-gradient(45deg, darkred, orange);
-}
-@media screen and (max-width: 768px) {
-    .nav {
-        display: none;
-        margin-left: 190px;
-        margin-top: -14px;
-        animation: fadeIn 0.5s ease-in-out;
-    }
-    .dnd{
-        font-size: 15px;
-        width: 245px;
-    }
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(-20px);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@350&display=swap" rel="stylesheet">
+    <title>Medicine Finder</title>
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
-        to {
-            opacity: 1;
-            transform: translateY(0);
+
+        #medicine-form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 60px;
+            height: 30vh;
+            margin-top: 130px;
+            width: 280px;
+            margin-left: 450px;
         }
-    }
-
-    .nav a {
-        margin-bottom: 10px;
-    }
-    .con{
-        display: none;
-    }
-    .h2,.h3{
-    font-size: 20px;
-    }
-    .menu-icon {
-        display: block;
-        margin-top: -23px;
-        cursor: pointer;
-        margin-left: 10px;
-    }
-
-    .nav.active {
-        display: flex;
-    }
-
-    .head {
-        margin-left: 30px;
-    }
-    #changingBox{
-        margin-left: 300px;
-        width: 140px;
-        margin-top: -17px;
-    }
-    .text{
-        margin-left: 0px;
-    }
-    .us{
-        margin-left: -1085px;
-        margin-top: 19px;
-    }
-}
-@media screen and (min-width: 769px) {
-    .menu-icon {
-        display: none;
-    }
-    #changingBox {
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out;
-      margin-left: 820px;
-      margin-top: -40px;
-      width: 270px;
-      padding: 4px;
-      border-radius: 325px;
-      color: #fff;
-    }
-    .h2{
-        margin-left: 140px;
-    }
-    .con1{
-        display: none;
-    }
-}
-</style>
-<div class="head">
-    <button style="border: none; background: transparent; cursor: pointer;" id="reload"><h2>Xapaz GC</h2></button>
-</div>
-<div class="menu-icon" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
+        input{
+            width: 270px;
+            padding: 6px;
+            outline: none;
+            border-bottom: 1px solid;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        input:hover{
+            outline: none;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+            margin-top: -80px;
+        }
+        .head{
+            display: flex;
+        }
+        button{
+            margin-left: 80px;
+            background: transparent;
+            padding: 8px;
+            font-family: 'Josefin Sans', sans-serif;
+            border: 1px solid;
+            border-image: linear-gradient(45deg, darkred, orange)1;
+        }
+        button:hover{
+            color: #fff;
+            background: linear-gradient(45deg, darkred,orange);
+            border: none;
+        }
+        @media only screen and (max-width: 600px) {
+            #medicine-form{
+                margin-left: 5px;
+                padding: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="medicine-form">
+    <div class="head">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png">
+    <h2>Medicine Finder</h2>
     </div>
-<div class="nav">
-    <a href="#" class="a">Home</a>&nbsp;&nbsp;
-    <a href="About.html" class="a">About</a>&nbsp;&nbsp;
-    <a href="Contact.html" class="a">Contact</a>&nbsp;&nbsp;
-</div>
-<div class="con">
-<div class="up">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzK24oZoWVseVEUSWSmpYn8ntTtvGShGHNfgpsT96cz_vSOg/viewform" class="a1"><button class="btn" style="width: 120px;">Upgrade Pass&nbsp;<i class="fa-solid fa-crown"></i></button></a>
-</div>
-<div class="donate">
-    <a href="Donate.html" target="_blank" class="a2"><button class="btn1">Donate&nbsp;<i class="fa-solid fa-circle-dollar-to-slot"></i></button></a>
-</div>
-</div>
-<div class="header">
-    <img src="https://i.ibb.co/R4WfmbW/Icon.png" class="icon">
-</div>
-<div class="text">
-    <br>
-    <h2 class="h2">This Browser Is Design</h2>
-    <h2 class="h3">For<div id="changingBox"></div></h2>
-</div>
-<div class="download">
-    <a href="XAPAZ GC.apk" target="_blank" download="Xapaz GC"><button class="dnd">Download Xapaz GC&nbsp;<i class="fa-solid fa-circle-down"></i></button></a>
-</div>
-<div class="con1">
-<div class="us">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzK24oZoWVseVEUSWSmpYn8ntTtvGShGHNfgpsT96cz_vSOg/viewform" target="_blank" class="a1"><button class="btn1" style="width: 245px;">Upgrade Pass&nbsp;<i class="fa-solid fa-crown"></i></button></a>
-</div>
-</div>
-<script>
-        function toggleMenu() {
-            const nav = document.querySelector('.nav');
-            nav.classList.toggle('active');
+    <input type="text" id="health-problem" placeholder="Enter your health problem:(e.g., sore throat)"><br><br>
+    <input type="text" id="characteristics" placeholder="Enter characteristics (e.g., for fever)"><br><br>
+
+    <button onclick="findMedicine()">Find Medicine</button>
+    <br><br>
+    <div id="result"></div>
+
+    <script>
+        function findMedicine() {
+            var healthProblem = document.getElementById("health-problem").value.toLowerCase();
+            var characteristics = document.getElementById("characteristics").value.toLowerCase();
+            var resultDiv = document.getElementById("result");
+            var medicineSuggestion = getMedicineSuggestion(healthProblem, characteristics);
+
+            // Display the result
+            resultDiv.innerHTML = "<strong>Suggested Medicine:</strong> " + medicineSuggestion;
         }
-</script>
-<script>
-  const changingBox = document.getElementById('changingBox');
-  const texts = [
-    { text: 'Gamers', color: '#3498db' },
-    { text: 'Programmers', color: '#2ecc71' },
-    { text: 'Blogger', color: '#e74c3c' },
-    { text: 'Music Listners', color: '#f39c12' },
-    { text: 'Youtubers', color: 'red' }
-  ];
 
-  let index = 0;
+        function getMedicineSuggestion(healthProblem, characteristics) {
+            // Simulate medicine suggestions based on the health problem and characteristics
+            var medicineDatabase = {
+    "sore throat": { name: "Throat lozenges", characteristics: "for sore throat relief" },
+    "fever": { name: "Acetaminophen", characteristics: "for fever" },
+    "headache": { name: "Paracetamol", characteristics: "for pain and fever" },
+    "muscle pain": { name: "Ibuprofen", characteristics: "for pain and inflammation" },
+    "back pain": { name: "Diclofenac", characteristics: "for pain and inflammation" },
+    "joint pain": { name: "Naproxen", characteristics: "for pain and inflammation" },
+    "eye strain": { name: "Artificial tears", characteristics: "for dry eyes" },
+    "allergies": { name: "Cetirizine", characteristics: "for allergy relief" },
+    "common cold": { name: "Ibuprofen and decongestant", characteristics: "for cold symptoms" },
+    "stomach ache": { name: "Antacid", characteristics: "for indigestion" },
+    "diarrhea": { name: "Loperamide", characteristics: "for diarrhea relief" },
+    "migraine": { name: "Sumatriptan", characteristics: "for migraine relief" },
+    "hiccups": { name: "Hold your breath", characteristics: "to stop hiccups" },
+    "tennis elbow": { name: "Rest and ice", characteristics: "for pain and swelling" },
+    "hair loss": { name: "Minoxidil", characteristics: "for promoting hair growth" },
+    "sunburn": { name: "Aloe vera gel", characteristics: "for sunburn relief" },
+    "toothache": { name: "Acetaminophen", characteristics: "for pain relief" },
+    "sprained ankle": { name: "Ibuprofen", characteristics: "for pain and inflammation" },
+    "hay fever": { name: "Loratadine", characteristics: "for allergy relief" },
+    "poison ivy": { name: "Calamine lotion", characteristics: "for itching and rash" },
+    "ear infection": { name: "Antibiotics", characteristics: "for bacterial infections" },
+    "hives": { name: "Antihistamines", characteristics: "for allergy relief" },
+    "pink eye": { name: "Antibiotic eye drops", characteristics: "for bacterial conjunctivitis" },
+    "plantar fasciitis": { name: "Orthotic insoles", characteristics: "for foot support" },
+    "insomnia": { name: "Melatonin", characteristics: "for sleep support" },
+    "acid reflux": { name: "Antacids", characteristics: "for heartburn relief" },
+    "gout": { name: "Colchicine", characteristics: "for gout flare-ups" },
+    "carpal tunnel syndrome": { name: "Wrist splint", characteristics: "for wrist support" },
+    "kidney stones": { name: "Pain medication and fluids", characteristics: "for pain relief" },
+    "constipation": { name: "Fiber supplements", characteristics: "for digestive health" },
+    "mumps": { name: "Bed rest and fluids", characteristics: "for symptom relief" },
+    "vertigo": { name: "Meclizine", characteristics: "for dizziness relief" },
+    "rosacea": { name: "Topical or oral antibiotics", characteristics: "for skin condition" },
+    "laryngitis": { name: "Rest and hydration", characteristics: "for throat inflammation" },
+    "sciatica": { name: "Pain relievers and physical therapy", characteristics: "for pain relief" },
+    "gallstones": { name: "Pain medication and dietary changes", characteristics: "for symptom relief" },
+    "menstrual cramps": { name: "Ibuprofen", characteristics: "for pain relief" },
+    "fibromyalgia": { name: "Pain medication and exercise", characteristics: "for symptom relief" },
+    "tendonitis": { name: "Rest and ice", characteristics: "for inflammation relief" },
+    "sinusitis": { name: "Decongestants and antibiotics if bacterial", characteristics: "for sinus relief" },
+    "bronchitis": { name: "Rest and humidifiers", characteristics: "for respiratory relief" },
+    "pneumonia": { name: "Antibiotics", characteristics: "for bacterial infection" },
+    "migratory arthritis": { name: "NSAIDs", characteristics: "for joint inflammation" },
+    "thyroiditis": { name: "Thyroid medication", characteristics: "for thyroid health" },
+    "lupus": { name: "Corticosteroids and immunosuppressants", characteristics: "for symptom management" },
+    "celiac disease": { name: "Gluten-free diet", characteristics: "for dietary management" },
+    "Crohn's disease": { name: "Anti-inflammatory drugs", characteristics: "for inflammation control" },
+    "ulcerative colitis": { name: "Anti-inflammatory drugs", characteristics: "for inflammation control" },
+    "chronic kidney disease": { name: "Blood pressure medication", characteristics: "for blood pressure control" },
+    "liver cirrhosis": { name: "Symptomatic treatment", characteristics: "for symptom management" },
+    "osteoporosis": { name: "Calcium and vitamin D supplements", characteristics: "for bone health" },
+    "rheumatoid arthritis": { name: "Disease-modifying antirheumatic drugs (DMARDs)", characteristics: "for joint health" },
+    "multiple sclerosis": { name: "Disease-modifying drugs", characteristics: "for symptom management" },
+    "amyotrophic lateral sclerosis (ALS)": { name: "Symptomatic treatment", characteristics: "for symptom management" },
+    "Parkinson's disease": { name: "Levodopa and other medications", characteristics: "for symptom management" },
+    "Alzheimer's disease": { name: "Symptomatic treatment", characteristics: "for symptom management" },
+    "migraine with aura": { name: "Triptans", characteristics: "for migraine relief" },
+    "migraine without aura": { name: "Pain relievers and preventive medication", characteristics: "for migraine relief" },
+    "cluster headaches": { name: "Triptans and oxygen therapy", characteristics: "for headache relief" },
+    "tension headaches": { name: "Pain relievers and stress management", characteristics: "for headache relief" },
+    "bipolar disorder": { name: "Mood stabilizers", characteristics: "for mood stabilization" },
+    "schizophrenia": { name: "Antipsychotic medications", characteristics: "for symptom management" },
+    "major depressive disorder": { name: "Antidepressants", characteristics: "for mood improvement" },
+    "anxiety disorders": { name: "Anxiolytic medications", characteristics: "for anxiety relief" },
+    "obsessive-compulsive disorder (OCD)": { name: "Selective serotonin reuptake inhibitors (SSRIs)", characteristics: "for symptom management" },
+    "post-traumatic stress disorder (PTSD)": { name: "Selective serotonin reuptake inhibitors (SSRIs)", characteristics: "for symptom management" },
+    "attention-deficit/hyperactivity disorder (ADHD)": { name: "Stimulant medications", characteristics: "for focus and attention" },
+    "autism spectrum disorder": { name: "Behavioral therapy and support", characteristics: "for symptom management" },
+    "eating disorders": { name: "Counseling and nutritional therapy", characteristics: "for symptom management" },
+    "sleep apnea": { name: "Continuous positive airway pressure (CPAP)", characteristics: "for breathing support" },
+    "insulin resistance": { name: "Metformin", characteristics: "for blood sugar control" },
+    "type 1 diabetes": { name: "Insulin therapy", characteristics: "for blood sugar control" },
+    "type 2 diabetes": { name: "Oral antidiabetic medications", characteristics: "for blood sugar control" },
+    "hypothyroidism": { name: "Levothyroxine", characteristics: "for thyroid hormone replacement" },
+    "hyperthyroidism": { name: "Antithyroid medications", characteristics: "for thyroid hormone regulation" },
+    "hypertension": { name: "Antihypertensive medications", characteristics: "for blood pressure control" },
+    "coronary artery disease": { name: "Antiplatelet and statin medications", characteristics: "for cardiovascular health" },
+    "heart failure": { name: "Diuretics and ACE inhibitors", characteristics: "for fluid balance and heart function" },
+    "arrhythmias": { name: "Antiarrhythmic medications", characteristics: "for heart rhythm control" },
+    "heart attack": { name: "Aspirin and clot-busting medications", characteristics: "for emergency treatment" },
+    "chronic obstructive pulmonary disease (COPD)": { name: "Bronchodilators and corticosteroids", characteristics: "for respiratory support" },
+    "asthma": { name: "Bronchodilators and inhaled corticosteroids", characteristics: "for respiratory support" },
+    "pulmonary embolism": { name: "Anticoagulant medications", characteristics: "for blood clot prevention" },
+    "anemia": { name: "Iron supplements", characteristics: "for iron deficiency" },
+    "leukemia": { name: "Chemotherapy and stem cell transplant", characteristics: "for cancer treatment" },
+    "lymphoma": { name: "Chemotherapy and radiation", characteristics: "for cancer treatment" },
+    "multiple myeloma": { name: "Chemotherapy and stem cell transplant", characteristics: "for cancer treatment" },
+    "pancreatic cancer": { name: "Surgery and chemotherapy", characteristics: "for cancer treatment" },
+    "prostate cancer": { name: "Surgery and radiation", characteristics: "for cancer treatment" },
+    "colon cancer": { name: "Surgery and chemotherapy", characteristics: "for cancer treatment" },
+    "lung cancer": { name: "Surgery and chemotherapy", characteristics: "for cancer treatment" },
+    "breast cancer": { name: "Surgery and chemotherapy", characteristics: "for cancer treatment" },
+    "ovarian cancer": { name: "Surgery and chemotherapy", characteristics: "for cancer treatment" },
+    "testicular cancer": { name: "Surgery and chemotherapy", characteristics: "for cancer treatment" },
+    "cervical cancer": { name: "Surgery and chemotherapy", characteristics: "for cancer treatment" },
+    "endometrial cancer": { name: "Surgery and chemotherapy", characteristics: "for cancer treatment" },
+    "glioblastoma": { name: "Surgery and chemotherapy", characteristics: "for cancer treatment" },
+    "sarcoma": { name: "Surgery, radiation, and chemotherapy", characteristics: "for cancer treatment" },
+    "melanoma": { name: "Surgery, chemotherapy, and immunotherapy", characteristics: "for cancer treatment" },
+    "kidney cancer": { name: "Surgery, targeted therapy, and immunotherapy", characteristics: "for cancer treatment" },
+    "bladder cancer": { name: "Surgery, chemotherapy, and immunotherapy", characteristics: "for cancer treatment" },
+    "liver cancer": { name: "Surgery, ablation, and targeted therapy", characteristics: "for cancer treatment" },
+    "esophageal cancer": { name: "Surgery, chemotherapy, and radiation", characteristics: "for cancer treatment" },
+    "throat cancer": { name: "Surgery, chemotherapy, and radiation", characteristics: "for cancer treatment" },
+    "stomach cancer": { name: "Surgery, chemotherapy, and radiation", characteristics: "for cancer treatment" },
+    "hiv/aids": { name: "Antiretroviral therapy (ART)", characteristics: "for HIV treatment" },
+    "hepatitis B": { name: "Antiviral medications", characteristics: "for hepatitis B treatment" },
+    "hepatitis C": { name: "Antiviral medications", characteristics: "for hepatitis C treatment" },
+    "tuberculosis": { name: "Antibiotics", characteristics: "for TB treatment" },
+    "rabies": { name: "Rabies vaccine and immunoglobulin", characteristics: "for rabies exposure" },
+    "malaria": { name: "Antimalarial medications", characteristics: "for malaria prevention and treatment" },
+    "zika virus": { name: "Supportive care", characteristics: "for symptom relief" },
+    "ebola virus": { name: "Supportive care and experimental treatments", characteristics: "for symptom relief" },
+    "influenza": { name: "Antiviral medications", characteristics: "for flu treatment" },
+    "cholera": { name: "Oral rehydration solution", characteristics: "for fluid replacement" },
+    "typhoid fever": { name: "Antibiotics", characteristics: "for bacterial infection treatment" },
+    "dengue fever": { name: "Supportive care", characteristics: "for symptom relief" },
+    "yellow fever": { name: "Yellow fever vaccine", characteristics: "for prevention" },
+    "chikungunya": { name: "Supportive care", characteristics: "for symptom relief" },
+    "west nile virus": { name: "Supportive care", characteristics: "for symptom relief" },
+    "Lyme disease": { name: "Antibiotics", characteristics: "for bacterial infection treatment" },
+    "syphilis": { name: "Penicillin and other antibiotics", characteristics: "for bacterial infection treatment" },
+    "gonorrhea": { name: "Antibiotics", characteristics: "for bacterial infection treatment" },
+            };
 
-  function changeText() {
-    changingBox.style.opacity = 0;
-    setTimeout(() => {
-      const currentText = texts[index];
-      changingBox.textContent = currentText.text;
-      changingBox.style.backgroundColor = currentText.color;
-      changingBox.style.opacity = 1;
-      index = (index + 1) % texts.length;
-    }, 500);
-  }
+            if (healthProblem) {
+                var suggestion = medicineDatabase[healthProblem];
 
-  changeText(); 
-  setInterval(changeText, 2500); 
-</script>
-<script>
-    document.getElementById('reload').addEventListener('click', function() {
-            location.reload();
-        });
-</script>
+                if (suggestion) {
+                    return `${suggestion.name} (${suggestion.characteristics || 'No specific characteristics'})`;
+                } else {
+                    return "No specific medicine found. Consult a doctor.";
+                }
+            } else if (characteristics) {
+                // If the user didn't enter a health problem but entered characteristics, try to suggest a medicine
+                for (var problem in medicineDatabase) {
+                    if (medicineDatabase.hasOwnProperty(problem)) {
+                        var suggestion = medicineDatabase[problem];
+                        if (suggestion.characteristics && suggestion.characteristics.includes(characteristics)) {
+                            return `${suggestion.name} (${suggestion.characteristics})`;
+                        }
+                    }
+                }
+
+                return "No specific medicine found based on characteristics. Consult a doctor.";
+            } else {
+                return "Please enter a health problem or characteristics.";
+            }
+        }
+    </script>
+</div>
+
+</body>
+</html>
